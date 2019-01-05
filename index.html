@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zoe Wood</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS -->
+    <!-- <link href="css/simple-sidebar.css" rel="stylesheet"> -->
+    
+    <style>
+
+        .initialhide{
+
+            display: none;
+        }
+
+    </style>
+
+    <script src="jquery.js"></script>
+    
+    <script type="text/javascript">
+
+        function aboutClicked(){
+
+                $("#About").show('fast');
+                $("#Writing").hide('fast'); 
+                $("#Resume").hide('fast'); 
+                $("#Contact").hide('fast'); 
+ 
+        }
+
+        function writeClicked(){
+
+                $("#About").hide('fast');
+                $("#Contact").hide('fast');
+                $("#Resume").hide('fast'); 
+                $("#Writing").show('fast'); 
+        }
+
+        function resumeClicked(){
+
+                $("#About").hide('fast');
+                $("#Contact").hide('fast');
+                $("#Resume").show('fast'); 
+                $("#Writing").hide('fast'); 
+        }
+
+        function contactClicked(){
+
+                $("#About").hide('fast');
+                $("#Contact").show('fast');
+                $("#Resume").hide('fast'); 
+                $("#Writing").hide('fast');             
+        }
+        
+    </script>
+        
+</head>
+
+<body>
+    <h1>Site under construction</h1>
+   
+    <div id="container">
+        <div id="item1">
+            <h1>Zoe Wood</h1>
+            <p>I studied computer science in college and work in IT as a product manager.</p>
+            <p>Teaching in tech is very important to me -- I volunteer for <a>ScriptEd</a>.</p> 
+            <p>
+        </div>
+        <div id="item2">
+            <h1>Contact</h1>
+            <ul>
+                <li>zoe . emma . wood @ gmail </li>
+                <li><a>PGP</a></li>
+                <li><a>Twitter</a></li>
+            </ul>
+        </div>
+        <div id="item3">
+            <h1>Writing</h1>
+        </div>
+        <div id="item4">
+            <h1>Resume</h1>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
